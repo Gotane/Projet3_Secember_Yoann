@@ -1,0 +1,27 @@
+/*variables page principale*/
+
+$color-menu1:#fcdfdb;
+$color-menu2: #fff5fe;
+$color-menu3: #edefef;
+$color-menu4: #fdfffd;
+
+
+/*variables couleur header-footer-boton*/
+$colorsecondaire: #579c87;
+
+
+/*variables button*/
+$num-bars: 3;
+$anim-dur: 1.5s;
+$anim-delay: $anim-dur / $num-bars;
+
+
+/* variable mobile-only*/
+$breakpoint: (
+    tablette: 1400px
+);
+
+$mobilepoint: (
+    mobile: 630px
+);
+

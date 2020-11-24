@@ -1,0 +1,238 @@
+
+
+
+
+
+.menu1 {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    font-family: 'Devonshire', cursive;
+
+    &__main {
+        @include menu-main;
+        background-color: $color-menu1 ;
+        @include menu-main-tablette;
+            
+            &__texte {
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                width: 80%;
+            }
+    
+        
+
+       
+
+        &__img {
+            display: flex;
+            margin: auto;
+           
+            width: 200px;
+            @media screen and (max-width: map-get($breakpoint, tablette )){
+                width: 100px;
+                
+                
+        
+            }
+        
+            
+        }
+
+        &__titre {
+            @include menu-titre;
+            @media screen and (max-width: map-get($breakpoint, tablette )){
+                font-size: 200%;
+                margin-bottom: 20px;
+                
+                
+        
+            }
+        }
+
+
+        
+    }
+        
+
+ 
+
+   
+
+    &__entrees, &__plat, &__dessert {
+        
+        
+        font-family: 'Kalam', cursive;
+        
+       
+
+        &__ a.underline {
+            @include underline;
+        
+          
+            
+           &:before {
+            @include underline-before;
+           }
+        
+           &:hover:before {
+            
+               @include underline-hover-before;
+              
+           }
+        }
+        
+        &__prix {
+            display: flex;
+            @include mobile-only-menu1-repas;
+        }
+
+        &__titre {
+            @include epd-titre;
+            font-size: 200%;
+            
+            @media screen and (max-width: map-get($breakpoint, tablette )){
+                margin: auto;
+                font-size: 25px;
+                margin-top: 30px;
+                display: block;
+                
+                
+        
+            }
+
+            @media screen and (max-width: map-get($mobilepoint, mobile)){
+                margin: auto;
+                font-size: 20px;
+                margin-top: 30px;
+                
+                
+        
+            }
+        
+    }
+
+        &__repas {
+           @include menu-repas;
+            @include tablette-only-menu1-repas;
+            @include mobile-only-menu1-repas;
+        }
+
+        &img {
+            float: left;
+            
+            
+
+            @media screen and (max-width: map-get($breakpoint, tablette )){
+                display: none;
+                
+                
+        
+            }
+        }
+
+    }
+
+
+    &__left {
+        
+        @include left;
+
+        @media screen and (max-width: map-get($breakpoint, tablette )){
+            display: none;
+            
+            
+    
+        }
+    }
+
+    &__right {
+        @include right;
+
+        @media screen and (max-width: map-get($breakpoint, tablette )){
+            display: none;
+            
+            
+    
+        }
+    }
+    
+
+}
+
+
+
+.logo-fin {
+    display: flex;
+    margin: auto;
+    font-size: 30px;
+    
+
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        font-size: 80%;
+        
+        
+
+    }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        font-size: 30%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+
+    }
+
+    &__img {
+        @media screen and (max-width: map-get($breakpoint, tablette )){
+            width: 30%;
+            height: 30%;
+            
+            
+    
+        }
+    
+        @media screen and (max-width: map-get($mobilepoint, mobile )){
+            
+            width: 30%;
+            height: 30%;
+            margin: auto;
+            
+    
+        }
+    }
+
+}
+
+
+.titre {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        display: none;
+        
+        
+        
+
+    }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        
+        display: none;
+        
+
+    }
+}
+
+
+
+  
+
+ 
+
+
+  
+    
+     
+

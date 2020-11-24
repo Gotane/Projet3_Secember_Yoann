@@ -1,0 +1,161 @@
+
+
+
+
+
+.menu3 {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    
+
+    &__left {
+        display: flex;
+        margin: auto;
+        text-align: left;
+        margin-left: -100px;
+        margin-top: -10px;
+        
+        
+       
+    }
+    
+    &__right {
+        display: flex;
+        margin: auto;
+        text-align: right;
+        margin-right: -100px;
+        margin-top: -5px;
+       
+        
+        
+    }
+    &__main {
+        
+        @include menu-main;
+        background-color: $color-menu3 ;
+
+        @include menu-main-tablette;
+            &__texte {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                width: 70%;
+            }
+
+        &__titre {
+        @include menu-titre;
+        font-family: 'Parisienne', cursive;
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left, #0231df, #7ac1ff);
+        @media screen and (max-width: map-get($breakpoint, tablette )){
+            font-size: 200%;
+            margin-bottom: 20px;
+            
+    
+        }
+        }
+
+    
+}
+
+    &__entrees, &__plat, &__dessert {
+        
+        
+        
+        font-family: 'Kalam', cursive;
+       
+
+        & a.underline {
+            @include underline;
+
+            &:before {
+                @include underline-before;
+            }
+            
+               &:hover:before {
+                
+                @include underline-hover-before;
+                  
+               
+            }
+        }
+        & img {
+            
+            @media screen and (max-width: map-get($breakpoint, tablette )){
+                display: none;
+                
+                
+        
+            }
+        }
+        &__titre {
+           @include epd-titre;
+            font-size: 150%;
+           
+            @media screen and (max-width: map-get($breakpoint, tablette )){
+                margin: auto;
+                font-size: 20px;
+                margin-top: 30px;
+                display: block;
+                
+        
+            }
+
+            @media screen and (max-width: map-get($mobilepoint, mobile)){
+                margin: auto;
+                font-size: 20px;
+                margin-top: 30px;
+                display: block;
+                
+                
+        
+            }
+
+        
+    }
+
+    &__prix {
+        @include mobile-only-menu1-repas;
+        
+    }
+
+        &__repas {
+            @include menu-repas;
+            @include tablette-only-menu2-repas;
+            @include mobile-only-menu1-repas;
+
+        }
+
+
+    }
+
+    
+}
+
+
+.titre {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        display: none;
+        
+        
+        
+
+    }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        
+        display: none;
+        
+
+    }
+}
+
+
+
+  
+    
+  

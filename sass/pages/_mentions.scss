@@ -1,0 +1,63 @@
+
+.mentions {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background-color: $color-menu2;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 100px;
+    font-family: sans-serif;
+
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        width: 100%;
+        
+        
+        
+
+    }
+
+    &__texte {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    &__editeur {
+
+        text-align: justify;
+        
+        &__titre {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+    
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        
+        text-align: center;
+        
+
+        }
+
+}

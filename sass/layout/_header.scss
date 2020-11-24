@@ -1,0 +1,21 @@
+
+
+.header {
+    text-decoration: none;
+    text-align: center;
+    background-color: $colorsecondaire ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fdcb46;
+    width: 100%;
+    margin: auto;
+    @include tablette-only-header;
+    
+    & a {
+        text-decoration: none;
+        
+        color: #fdcb46;
+    }
+}

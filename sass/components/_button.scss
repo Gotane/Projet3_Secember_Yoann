@@ -1,0 +1,140 @@
+.btn {
+    display: flex;
+    margin: auto;
+    vertical-align: middle;
+    
+     &__prochainement {
+        border:none;
+        display: flex;
+        border-radius:8px;
+        background: $colorsecondaire;
+        text-align: center;
+        margin-bottom: 150px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50px;
+        width: 25%;
+        @include tablette-only-button;
+        @media screen and (max-width: map-get($breakpoint, tablette )) {
+          margin-bottom: 100px;
+          width: 50%;
+          padding-top: 1px;
+      }
+        & a {
+          @include button-a;
+          @include tablette-only-button;
+        }
+
+        .fa-circle  {
+          @include points-prochainement;
+          
+          
+          @for $i from 1 through $num-bars {
+            &--#{$i} {
+              animation-delay: $anim-delay * $i;
+              display: inline-block;
+            
+            width: 7px;
+            height: 7px;
+            
+            background-color: #fdcb46;
+            margin-bottom: 1px;
+            
+            margin-left: 5px;
+            
+            border-radius: 50%;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-name: points;
+            animation-duration: $anim-dur;
+            @media screen and (max-width: map-get($breakpoint, tablette )) {
+     
+              font-size: 1em;
+              width: 5px;
+              height: 5px;
+              
+           }
+
+           @media screen and (max-width: map-get($mobilepoint, mobile )) {
+     
+            font-size: 1em;
+            width: 5px;
+            height: 5px;
+            margin-left: 5px;
+            
+         }
+            }
+          }
+            
+          }
+        
+
+        
+    }
+
+    
+
+    &__mentions {
+        margin: auto;
+        vertical-align: middle;
+        border-radius:8px;
+        background:$colorsecondaire;
+        font: 13px Arial;
+        display: flex;
+        padding-top: 15px;
+      @include tablette-only-button;
+        & :hover {
+            @include wiggle;
+            animation-name: angry-animation;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        
+        & a {
+            @include button-a;
+            margin-top: 5%;
+          @include tablette-only-button;
+           
+        
+        }
+    }
+
+    
+
+    &__contact {
+        border:none;
+        margin: auto;
+        border-radius:8px;
+        background:$colorsecondaire;
+        font: 13px Arial;
+        display: flex;
+        vertical-align: middle;
+        padding-top: 15px;
+      @include tablette-only-button;
+
+        & :hover {
+            @include wiggle;
+            animation-name: angry-animation;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            
+        }
+        
+        & a {
+          @include button-a;
+          margin-top: 5%;
+          @include tablette-only-button;
+        
+        }
+    }
+
+
+}
